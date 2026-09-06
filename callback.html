@@ -1,0 +1,25 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>TalkHead OAuth Callback</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; color: #16181a; }
+  h1 { font-size: 1.3rem; }
+  code { background: #f1f2ef; border: 1px solid #dcdfd9; border-radius: 4px; padding: 2px 6px; word-break: break-all; }
+  .row { margin: 16px 0; }
+  label { display: block; font-size: 13px; color: #565f60; margin-bottom: 4px; }
+</style>
+<h1>Authorization complete</h1>
+<p>Copy the value below back into <code>get_tiktok_token.py exchange</code>.</p>
+<div class="row">
+  <label>code</label>
+  <code id="code">(none in URL)</code>
+</div>
+<div class="row">
+  <label>Full callback URL (for reference)</label>
+  <code id="full"></code>
+</div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById("code").textContent = params.get("code") || "(none in URL)";
+  document.getElementById("full").textContent = window.location.href;
+</script>
