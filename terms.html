@@ -1,0 +1,208 @@
+<title>TalkHead Terms of Service</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f1f2ef;
+    --surface: #ffffff;
+    --ink: #16181a;
+    --muted: #565f60;
+    --hairline: #dcdfd9;
+    --accent: #1f6f78;
+    --accent-ink: #ffffff;
+    --font-display: "Archivo", system-ui, sans-serif;
+    --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171a;
+      --surface: #1b1f22;
+      --ink: #edf0ee;
+      --muted: #9aa3a2;
+      --hairline: #30373a;
+      --accent: #5fc2c9;
+      --accent-ink: #0c1516;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171a;
+    --surface: #1b1f22;
+    --ink: #edf0ee;
+    --muted: #9aa3a2;
+    --hairline: #30373a;
+    --accent: #5fc2c9;
+    --accent-ink: #0c1516;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--hairline);
+    padding: 22px max(24px, calc((100vw - 680px) / 2));
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+    flex: none;
+  }
+  .masthead span {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .updated {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 44px;
+  }
+
+  section { margin: 0 0 40px; }
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.005em;
+    margin: 0 0 14px;
+    padding-top: 20px;
+    border-top: 1px solid var(--hairline);
+  }
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+  ol, ul { margin: 0 0 14px; padding-left: 1.3em; max-width: 60ch; }
+  li { margin: 0 0 8px; }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.86em;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 4px;
+    padding: 0.12em 0.4em;
+  }
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    margin-top: 48px;
+    padding-top: 24px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+  a { color: var(--accent); text-decoration-thickness: 1px; }
+</style>
+
+<div class="masthead">
+  <span class="dot"></span>
+  <span>TalkHead Newsletter — automated daily video pipeline</span>
+</div>
+
+<main>
+  <p class="eyebrow">Terms of Service</p>
+  <h1>Terms for TalkHead</h1>
+  <p class="updated">Last updated 6 September 2026</p>
+
+  <section>
+    <h2>Scope of this service</h2>
+    <p>
+      TalkHead Newsletter is a personal automation, built and operated
+      solely by its author, Pankaj Kumar, that generates and publishes one
+      short AI-news video per day to accounts the author owns (YouTube,
+      Instagram, LinkedIn, and TikTok). It is not a public product, is not
+      offered for sign-up, and is not intended for use by anyone other than
+      its author. There is no user registration, account creation, or
+      public-facing service surface for anyone to accept these terms as an
+      end user of — this page exists to satisfy platform API review
+      requirements for the OAuth apps the pipeline connects to.
+    </p>
+  </section>
+
+  <section>
+    <h2>What the automation does</h2>
+    <p>
+      Each run reads one publicly available AI-industry news story, writes
+      a short narration script from it, synthesizes narration in the
+      author's own voice, assembles a short video, and — only after the
+      author personally approves it via a private Telegram message — posts
+      that video to the author's own social accounts. No step in this
+      pipeline collects data from, or posts on behalf of, any account other
+      than the author's own.
+    </p>
+  </section>
+
+  <section>
+    <h2>Content &amp; accuracy</h2>
+    <p>
+      Published videos summarize real, publicly reported news in
+      plain language. While the pipeline includes automated fact-checking
+      steps, it is not a substitute for the original reporting it
+      summarizes, and viewers should treat it as a summary, not a primary
+      source.
+    </p>
+  </section>
+
+  <section>
+    <h2>No warranty</h2>
+    <p>
+      This is a personal side project provided as-is, with no uptime
+      guarantee, service-level commitment, or warranty of any kind. The
+      author may modify, pause, or discontinue it at any time without
+      notice.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to these terms</h2>
+    <p>
+      These terms may be updated as the pipeline's platform integrations
+      change. The "last updated" date above reflects the most recent
+      revision.
+    </p>
+  </section>
+
+  <footer>
+    Questions →
+    <a href="mailto:pankajverma.mca@gmail.com">pankajverma.mca@gmail.com</a>
+  </footer>
+</main>

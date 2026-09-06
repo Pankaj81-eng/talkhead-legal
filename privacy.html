@@ -1,0 +1,231 @@
+<title>TalkHead Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #f1f2ef;
+    --surface: #ffffff;
+    --ink: #16181a;
+    --muted: #565f60;
+    --hairline: #dcdfd9;
+    --accent: #1f6f78;
+    --accent-ink: #ffffff;
+    --font-display: "Archivo", system-ui, sans-serif;
+    --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171a;
+      --surface: #1b1f22;
+      --ink: #edf0ee;
+      --muted: #9aa3a2;
+      --hairline: #30373a;
+      --accent: #5fc2c9;
+      --accent-ink: #0c1516;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171a;
+    --surface: #1b1f22;
+    --ink: #edf0ee;
+    --muted: #9aa3a2;
+    --hairline: #30373a;
+    --accent: #5fc2c9;
+    --accent-ink: #0c1516;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--hairline);
+    padding: 22px max(24px, calc((100vw - 680px) / 2));
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+    flex: none;
+  }
+  .masthead span {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .updated {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 44px;
+  }
+
+  section { margin: 0 0 40px; }
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.005em;
+    margin: 0 0 14px;
+    padding-top: 20px;
+    border-top: 1px solid var(--hairline);
+  }
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+  ol, ul { margin: 0 0 14px; padding-left: 1.3em; max-width: 60ch; }
+  li { margin: 0 0 8px; }
+
+  code, .scope {
+    font-family: var(--font-mono);
+    font-size: 0.86em;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 4px;
+    padding: 0.12em 0.4em;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 0 0 14px;
+  }
+  .card h3 {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  .scopes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    margin-top: 48px;
+    padding-top: 24px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+  a { color: var(--accent); text-decoration-thickness: 1px; }
+</style>
+
+<div class="masthead">
+  <span class="dot"></span>
+  <span>TalkHead Newsletter — automated daily video pipeline</span>
+</div>
+
+<main>
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>How TalkHead handles data</h1>
+  <p class="updated">Last updated 6 September 2026</p>
+
+  <section>
+    <h2>What this is</h2>
+    <p>
+      TalkHead Newsletter is a personal, single-operator automation that
+      publishes one short AI-news explainer video per day. It is built,
+      run, and owned entirely by its author, Pankaj Kumar, and is not
+      distributed to or usable by any other person or organization.
+    </p>
+    <p>Each day, the pipeline:</p>
+    <ol>
+      <li>Reads the day's top AI-industry news story from a fixed editorial source.</li>
+      <li>Writes a short, plain-language narration script from that story.</li>
+      <li>Synthesizes narration in the author's own cloned voice and assembles a short vertical video.</li>
+      <li>Sends the finished video to the author privately on Telegram for a one-tap Publish/Discard decision.</li>
+      <li>If approved, publishes the video to the author's own YouTube, Instagram, LinkedIn, and TikTok accounts.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>TikTok data access</h2>
+    <p>This app requests exactly two TikTok API scopes, both against the author's own TikTok account only:</p>
+    <div class="card">
+      <h3>Scopes requested</h3>
+      <div class="scopes">
+        <span class="scope">user.info.basic</span>
+        <span class="scope">video.publish</span>
+      </div>
+    </div>
+    <p>
+      <span class="scope">user.info.basic</span> is used only to confirm which
+      account is authorized. <span class="scope">video.publish</span> is used
+      only to upload the day's finished video to that same account. The app
+      does not read followers, comments, direct messages, analytics, or any
+      other TikTok user's data, and is not offered to or usable by any TikTok
+      account other than the author's own.
+    </p>
+  </section>
+
+  <section>
+    <h2>YouTube, Instagram &amp; LinkedIn data access</h2>
+    <p>
+      The same one-account, one-purpose model applies to every platform this
+      pipeline publishes to. On YouTube it requests only the
+      <code>youtube.upload</code> scope, used solely to upload the day's
+      video to the author's own channel — no analytics, comments, or
+      subscriber data. Instagram and LinkedIn publishing likewise only ever
+      posts to the author's own connected accounts.
+    </p>
+  </section>
+
+  <section>
+    <h2>What's stored, and where</h2>
+    <p>
+      The only credentials stored are OAuth access/refresh tokens for the
+      author's own social accounts, held as encrypted secrets in the
+      project's private GitHub Actions environment and used solely to
+      re-authenticate each day's automated upload. A log of each day's
+      published script, video, and publish result is kept privately for the
+      author's own record-keeping. No data collected through any of these
+      scopes is sold, shared with, or processed by any third party beyond
+      the platform it was published to.
+    </p>
+  </section>
+
+  <footer>
+    Questions about this policy or the app's data use →
+    <a href="mailto:pankajverma.mca@gmail.com">pankajverma.mca@gmail.com</a>
+  </footer>
+</main>
