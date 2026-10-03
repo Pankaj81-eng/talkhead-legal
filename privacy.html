@@ -168,7 +168,7 @@
       TalkHead Newsletter is an automated content pipeline, built and
       operated by its author, Pankaj Kumar, that publishes one short
       AI-news explainer video per day to public channels the author owns
-      (YouTube, Instagram, LinkedIn, and TikTok). The pipeline itself has
+      (YouTube, Instagram, and LinkedIn; the author also shares the same videos to TikTok manually, with no API access). The pipeline itself has
       a single operator — there is no public sign-up or multi-user
       accounts — but its published output is fully public content,
       viewable by anyone on those platforms.
@@ -179,27 +179,16 @@
       <li>Writes a short, plain-language narration script from that story.</li>
       <li>Synthesizes narration in the author's own cloned voice and assembles a short vertical video.</li>
       <li>Sends the finished video to the author privately on Telegram for a one-tap Publish/Discard decision.</li>
-      <li>If approved, publishes the video to the author's own YouTube, Instagram, LinkedIn, and TikTok accounts.</li>
+      <li>If approved, publishes the video to the author's own YouTube, Instagram, and LinkedIn accounts. (Sharing to TikTok is done by hand by the author, outside this pipeline.)</li>
     </ol>
   </section>
 
   <section>
-    <h2>TikTok data access</h2>
-    <p>This app requests exactly two TikTok API scopes, both against the author's own TikTok account only:</p>
-    <div class="card">
-      <h3>Scopes requested</h3>
-      <div class="scopes">
-        <span class="scope">user.info.basic</span>
-        <span class="scope">video.publish</span>
-      </div>
-    </div>
+    <h2>TikTok</h2>
     <p>
-      <span class="scope">user.info.basic</span> is used only to confirm which
-      account is authorized. <span class="scope">video.publish</span> is used
-      only to upload the day's finished video to that same account. The app
-      does not read followers, comments, direct messages, analytics, or any
-      other TikTok user's data, and is not offered to or usable by any TikTok
-      account other than the author's own.
+      This app does not connect to TikTok's API and holds no TikTok
+      credentials or data. The author shares finished videos to their own
+      TikTok account manually, using TikTok's own app.
     </p>
   </section>
 
